@@ -13,8 +13,20 @@ b) Runtime: O(n*log(n))
 
 c) Runtime: O(n)
 
-    The function will be recursively called n+1 times (the length of n plus the zero base case) and the operation it performs is fixed. Ignoring the (+1) constant, this give a runtime of n.
+    The function will be recursively called n+1 times (the length of n plus the zero base case) and the operation it performs is fixed. Ignoring the (+1) constant, this gives a runtime of n.
 
 ## Exercise II
 
+Algorithm:
+
+For each floor starting at floor 1 until the n-th floor, drop an egg.
+    If the egg isn't broken, continue to the next floor.
+    If the egg breaks, stop dropping eggs. The current floor is floor f.
+
+
+You'll only have to break one egg to find floor f.
+
+Runtime complexity: O(n)
+
+    In the worst case scenario, floor f will be the n-th story, so the loop will run n times.
 
