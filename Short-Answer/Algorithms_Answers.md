@@ -21,12 +21,12 @@ Algorithm:
 
 The start floor is floor 1.
 The end floor is n.
-Find the middle floor between the start and end floors. (If total floors is even, the middle skews high)
+Find the middle floor between the start and end floors. (If total floors is even, the middle skews low)
 
-As long as there is is more than one floor (end - start > 0), drop an egg from the middle floor.
+As long as there is more than one floor (end - start > 0), drop an egg from the middle floor.
     If there are only two floors left (i.e. end - start == 1) 
-        and the egg breaks, the current middle floor (or end floor) is floor f.
-        Otherwise if the egg doesn't break, the start floor is floor f.
+        and the egg breaks, the current middle floor (or start floor) is floor f.
+        Otherwise if the egg doesn't break, the end floor is floor f.
         Stop dropping eggs.
     If the egg breaks, the current floor becomes the new ending floor. 
         Find the middle floor using the new ending floor. Continue dropping eggs.
