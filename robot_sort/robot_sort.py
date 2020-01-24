@@ -116,7 +116,7 @@ class SortingRobot:
                 self.move_right()
             # if it can't move right, move left until reach beginning of list
             else:
-                # if currently holding None, swap it back
+                # if None in list, swap it out
                 if self.compare_item() is None:
                     self.swap_item()
                 # if light is off, the list is sorted
@@ -157,7 +157,7 @@ if __name__ == "__main__":
                 # if it's the same or lesser, do nothing
                 # shift over 'None'
         # if it can't move right, move left until reach beginning of list
-            # if currently holding None, swap it back
+            # if None in list, swap it out
             # if light is off
                 # the list is sorted
                 # break the loop
