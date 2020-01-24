@@ -97,7 +97,7 @@ class SortingRobot:
         Sort the robot's list.
         """
         while True:
-            # pick up item at current position (swap item) as long as it's not none
+            # pick up item at current position (swap item)
             self.swap_item()
 
             # check if the robot can move right
@@ -105,7 +105,7 @@ class SortingRobot:
                 # if it can move right, do so
                 self.move_right()
                 # compare held item with the one at current position
-                if self.compare_item() is not None and self.compare_item() == 1:
+                if self.compare_item() == 1:
                     # if the held item's value is greater, swap items and turn on the light
                         self.set_light_on()
                         self.swap_item()
